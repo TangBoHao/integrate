@@ -1,0 +1,131 @@
+*{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-family: "microsoft yahei";
+	font-size: 34px;
+	font-weight: lighter;
+}
+/*配色 深->浅 #00796b #009688 #b2dfdb*/
+/*强调色 深->浅 #ffed00 #feff00 #feff87*/
+body{
+	background-color: white;
+}
+/*头部*/
+#header{
+	width: 100%;
+	height: 200px;
+	box-shadow: 0px 10px 20px rgba(0,0,0,0.3);
+
+	position: fixed;
+	padding-left: 5%;
+
+	color: white;
+	font-size: 1.8em;
+	letter-spacing: 5px;
+	line-height: 200px;
+
+	background-color: #00796b;
+}
+#header_none{
+	width: 100%;
+	height: 260px;
+}
+/*设置 关于*/
+.but_circle{
+	width: 120px;
+	height: 120px;
+	border-radius:50%; 
+	box-shadow: 0px 10px 30px rgba(0,0,0,0.2);
+
+	position: relative;
+	float: right;
+	top:140px;
+
+	background-repeat: no-repeat;
+	background-size: 60%;
+	background-position: center;
+	background-color: #b2dfdb;
+}
+.but_circle:active{
+	background-color: #00796b;
+	box-shadow: 0px 30px 50px rgba(0,0,0,0.2);
+}
+/*设置*/
+#set{
+	right: 90px;
+
+	background-image: url(../img/set.png);
+
+}
+#set:active{
+	background-image: url(../img/set2.png);
+}
+/*关于*/
+#about{
+	right: 70px;
+
+	background-image: url(../img/about.png);
+}
+#about:active{
+	background-image: url(../img/about2.png);
+}
+/*返回*/
+#back{
+	right: 110px;
+
+	background-image: url(../img/back.png);
+}
+/*盒子*/
+.box{
+	width: 90%;
+	margin: 0 auto;
+}
+.box h1{
+	font-size: 1.5em;
+	line-height: 2em;
+}
+.box h1 span{
+	font-size: 1.5em;
+	line-height: 2em;
+	font-weight: bold;
+	margin: 0 0.4em;
+}
+/*分割线*/
+.line{
+	width: 100%;
+	height: 1px;
+	background-color: #bfbfbf;
+}
+/*关注的应用*/
+#care_box{
+	padding: 0.5em;
+	overflow: hidden;
+}
+.care{
+	width: 6em;
+	height: 6em;
+	margin: 1em;
+	border-radius: 1em;
+
+	float: left;
+
+	background-color: white;
+	background-position:center;
+	background-repeat: no-repeat;
+}
+#tieba{
+	background-image: url(../img/tieba.png);
+}
+#zhihu{
+	background-image: url(../img/zhihu.png);
+}
+#douban{
+	background-image: url(../img/douban.png);
+}
+#weibo{
+	background-image: url(../img/weibo.png);
+}
+#add{
+	background-image: url(../img/add.png);
+}
