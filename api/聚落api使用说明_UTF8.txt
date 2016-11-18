@@ -1,0 +1,37 @@
+﻿1登陆：
+api地址：www.scuec.top/nb/api/login.php
+http请求方法：post
+用户名索引键：username，密码索引键：password
+返回数据类型：json
+返回的值：错误：1，msg键对应值：0psw 表示密码输入错误
+		2，msg键对应值：0usm 表示用户名输入错误
+	    成功：msg键对应值：success；phone键对应用户手机，email键对应用户邮箱地址，userlike键对应用户喜好的社区。
+
+
+2注册：api请求地址:www.scuec.top/nb/api/register.php
+http请求方法：post
+用户名索引键：username，密码索引键：password，手机号码索引键：phone，邮箱地址索引键：email；
+返回数据类型：string
+返回的值：success，表示用户注册成功；failed表示注册失败，提示用户名已被注册
+
+
+3资讯内容：api请求地址：www.scuec.top/nb/api/message.php
+返回数据类型：json
+索引键为从0开始的数字，有一层嵌套
+每个对象的索引键为：title：文章标题，content：文章内容，belong：该条资讯来自的社区，url：该条资讯的原地址，conid该条资讯的id
+
+
+4内容详情：url请求地址：www.scuec.top/nb/api/detail.php
+http请求方法：get，键：conid，值为资讯的id
+返回的数据类型：json（若返回none，则提示当前数据库中没有数据）
+返回数据格式：两个键：message为文章信息，有一层嵌套，title为文章标题，content为文章内容，belong为文章所属社区，url为文章原地址
+comment为评论内容，有两层嵌套，从0开始的键表示评论的次序，每个对象的username键表示评论用户的用户名，comment键对应的值表示评论内容
+
+5退出当前账户：请求地址：www.scuec.top/api/quit.php
+请求后清空服务器中对应用户的session，无返回值。
+
+6发表评论：api请求地址：www.scuec.top/api/comment.php
+http请求方法:get:键conid，值：要评论文章的id
+	     post:键：comment，值：评论的内容。
+返回数据类型：string
+success表示发表评论成功，error表示发表评论失败。

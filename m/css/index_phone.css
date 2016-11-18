@@ -5,6 +5,7 @@
 	font-family: "microsoft yahei";
 	font-size: 34px;
 	font-weight: lighter;
+	text-decoration: none;
 }
 /*配色 深->浅 #00796b #009688 #b2dfdb*/
 /*强调色 深->浅 #ffed00 #feff00 #feff87*/
@@ -75,6 +76,7 @@ body{
 /*动态块*/
 .content{
 	width: 100%;
+	min-height: 90vh;
 }
 .content_box{
 	width: 100%;
@@ -97,12 +99,18 @@ body{
 }
 .right{
 	width: 85%;
-	height: 90%;
+	height: 80%;
 	padding-left: 1%;
 	padding-top: 20px;
 	overflow: hidden;
 
 	float: left;
+}
+/*时间*/
+.time{
+	padding-top: 20px;
+	padding-left: 1%;
+	overflow: hidden;
 }
 /*四种来源图标*/
 .logo_zhihu{
@@ -145,10 +153,11 @@ body{
 .right h1{
 	font-size: 1.5em;
 	line-height: 2em;
+	height: 2em;
+	overflow: hidden;
 }
 .right p{
 	width: 95%;
-	
 	font-size: 1.2em;
 	line-height: 1.5em;
 }
@@ -169,4 +178,18 @@ body{
 a{
 	color:black;
 	text-decoration: none;
+}
+
+/*重置元数据样式*/
+
+.question-title,.bio,.author,.heading,.heading-content,.right{
+	font-size: 1.2em;
+	line-height: 1.5em;
+}
+p a{
+	font-size: 1em;
+	line-height: 1.5em;
+}
+img{
+	display: none;
 }

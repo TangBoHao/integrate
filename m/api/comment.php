@@ -1,7 +1,6 @@
 <?php
 header("Access-Control-Allow-Origin:*");    //允许访问的域名，*表示所有的
 header("Access-Control-Allow-Methods:POST,GET");		//允许访问的请求方式
-header("Content-type: application/json; charset=utf-8");
 $content=$_POST['comment'];
 $conid=$_GET['conid'];
 echo $conid;
@@ -11,11 +10,6 @@ $servername = "localhost";
 $dbusername = "root";
 $password = "123456";
 $databasename='news';
-if($conid==0||$username==0)
-{
-echo "Error";
-exit;
-}
 
 // 创建连接
 $conn = mysqli_connect($servername, $dbusername, $password,$databasename);

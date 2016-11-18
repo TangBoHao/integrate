@@ -129,3 +129,22 @@ body{
 #add{
 	background-image: url(../img/add.png);
 }
+/*用户名及退出*/
+#username{
+	font-size: 1.2em;
+	font-weight: normal;
+}
+#unuser{
+	font-size: 0.9em;
+	font-weight: lighter;
+	color: #009688;
+	text-decoration: none;
+}
+.quitnow{
+	margin-left: 30px;
+	color: #009688;
+	float: right;
+	font-size: 0.8em;
+	padding-top: 20px;
+	text-decoration: none;
+}

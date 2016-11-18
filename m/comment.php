@@ -100,5 +100,5 @@ if ($conn->query($sql) === TRUE) {
 }
 
 echo '<script>';
-echo "window.location='http:/www.scuec.top/newsdetail.php?conid=$conid'";
+echo "window.location='newsdetail.php?conid=$conid'";
 echo '</script>';
